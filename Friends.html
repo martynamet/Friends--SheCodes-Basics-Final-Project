@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends ☕</title>
+</head>
+<style>
+
+    h1 {
+        text-align: center;
+        color: #EA181E;
+        font-size: 35px;
+        margin-top: 0px;
+    }
+
+    hr {
+        display: block;
+        max-width: 90%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background: #00B3E8;
+        font-size: 30px;
+        padding: 14px 20px;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+        transition: all 150ms ease-in-out;
+    }
+
+    button:hover {
+        color: #00B3E8;
+        background: white;
+        cursor: pointer;
+        border: none;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px 0px 0px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        border-radius: 12px;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .friends {
+        line-height: 1.5;
+        font-size: 16px;
+        padding: 20px 20px 10px 20px;
+        text-align: justify;
+    }
+
+    .blue {
+        color: #00B3E8;
+        font-weight: bold;
+    }
+
+    .photo {
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
+        border-radius: 8px;
+    }
+
+    .more {
+        font-size: 16px;
+        text-decoration: none;
+        margin: 10px 0 0 20px;
+        padding: 20x;
+    }
+
+    .link {
+        text-decoration: none;
+        color: #EA181E;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+        color: #FABD0F;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+</style>
+<body>
+
+    <div class="container">
+
+        <img 
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/486/original/1920px-Friends_logo.svg.png?1617556038"
+            alt="Friends logo"
+            class="logo"
+        >
+
+        <h1>
+            The best TV series
+        </h1>
+
+        <p class="friends">
+            <span class="blue">Friends</span> 
+            is an American television sitcom, created by David Crane and Marta Kauffman, which aired on NBC from September
+            22, 1994, to May 6, 2004, lasting ten seasons. 
+            <br /> 
+            With an ensemble cast starring 
+            <em>Jennifer Aniston, Courteney Cox, Lisa
+            Kudrow, Matt LeBlanc, Matthew Perry and David Schwimmer. </em>
+            The show revolves around six friends in their 20s and 30s who
+            live in Manhattan, New York City. 
+            <br />
+            The series was produced by Bright/Kauffman/Crane Productions, in association with
+            Warner Bros. Television. The original executive producers were Kevin S. Bright, Kauffman, and Crane.
+        </p>
+        
+        <hr />
+
+        <p class="more">
+            More information:
+        <ul>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Friends" target="_blank" class="link"> Wikipedia
+                </a>
+            </li>
+        
+            <li>
+                <a href="https://www.imdb.com/title/tt0108778/" target="_blank" class="link"> IMBD
+                </a>
+            </li>
+        </ul>
+        </p>
+
+        <img 
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/488/original/friendscast.0.0.1429818191.jpg?1617556602"
+            alt="Friends photo"
+            class="photo"
+        /> 
+
+        <h2>
+            Became a fan club member
+        </h2>
+
+        <button class="joinFanclub">
+            Join now!☕
+        </button>
+
+        <p class="footer">
+            This page was built by <strong>Martyna Met</strong>👩‍💻
+        </p>
+
+    </div>
+
+    <script>
+
+        function join() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email adress?");
+            let character = prompt("Who is your favourite character on Friends?");
+
+            character = character.toLowerCase();
+            character = character.trim();
+            
+            if (character === "ross") {
+                alert(
+                    "Hello " + name + " -Ross fan.👨‍🏫🖐 We'll contact you by e-mail: " + email + ". Have a nice day!🍨");
+            } else {
+                    if (character === "rachel") {
+                        alert(
+                            "Hello " + name + " - Rachel fan.👰🖐 We'll contact you by e-mail: " + email + ". Have a nice day!🍨");
+            } else {
+                    if (character === "monica") {
+                        alert(
+                            "Hello " + name + " - Monica fan.👩‍🍳🖐 We'll contact you by e-mail: " + email + ". Have a nice day!🍨");
+            } else {
+                    if (character === "phoebe") {
+                        alert(
+                            "Hello " + name + " - Phoebe fan.👩‍🎨🖐 We'll contact you by e-mail: " + email + ". Have a nice day!🍨");
+            } else {
+                    if (character === "joey") {
+                        alert(
+                            "Hello " + name + " - Joey fan.👨‍⚕️🖐 We'll contact you by e-mail: " + email + ". Have a nice day!🍨");
+            } else {
+                    if (character === "chandler") {
+                        alert(
+                            "Hello " + name + " - Chandler fan.👨‍💼🖐 We'll contact you by e-mail: " + email + ". Have a nice day!🍨");
+            } else {
+                    alert(
+                        "Hello " + name + " !🖐 We'll contact you by e-mail: " + email + ". Have a nice day!🍨");
+            }}}}}}}
+
+        
+        let joinButton = document.querySelector(".joinFanclub");
+        joinButton.addEventListener("click", join);
+
+    </script>
+</body>
+</html>
